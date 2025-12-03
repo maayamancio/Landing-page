@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-color: #9540da;
+  --secondary-color: #24262f;
+  --font-color: #4e525a;
+  --hover-color: rgba (96, 29, 149, 1);
+}
+
+body {
+  color: var(--font-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.85s ease;
+}
+
+body.dark {
+  --primary-color: #bb86fc;
+  --secondary-color: #e0e0e0;
+  --font-color: #b0bec5;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--primary-color);
+  border-radius: 100%;
+  overflow: hidden;
+}
+ 
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+} 
+
+button {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+button.outline {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  border-color: var(--primary-color);
+}
+
+.outline:hover {
+ background-color: #fff; 
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emphasis {
+  color: var(--primary-color);
+}
+
+body {
+  background-image: var(--background-image);
+  color: var(--font-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-image 0.85s ease, color 0.85s ease;
+  background-attachment: fixed;
+}
+
+header {
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+nav {
+  border: 1px;
+  font-size: 1.125rem;
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+li {
+  font-weight: 500;
+}
+
+li:hover {
+  color: var(--primary-color);
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  justify-items: flex-end;
+  margin-top: 80px;
+}
+
+article {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.title {
+  color: var(--font-color);
+  font-size: 5.5rem;
+  font-weight: bolder;
+  line-height: 3.5rem;
+}
+
+.frame {
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 50;
+  display: flex;
+  justify-content: center;
+  width: 340px;
+  height: 340px;
+}
+
+main {
+  padding: 0 40px;
+}
+
+#history {
+  margin-top: 60px;
+}
+
+#Skills {
+  margin-top: 60px;
+}
+
+footer {
+  color: var(--font-color);
+  padding: 20px 40px;
+  text-align: center;
+}
